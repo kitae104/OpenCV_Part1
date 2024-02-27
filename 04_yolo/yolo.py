@@ -17,7 +17,7 @@ colors = np.random.uniform(0, 255, size=(len(classes), 3))    # 클래스별 서
 
 # 이미지 로딩
 img = cv2.imread("images/yolo_01.jpg")
-img = cv2.resize(img, None, fx=0.4, fy=0.4)                   # 이미지 크기 조정
+#img = cv2.resize(img, None, fx=0.4, fy=0.4)                   # 이미지 크기 조정
 height, width, channels = img.shape                           # 이미지 크기 저장
 cv2.imshow("Original Image", img)
 
@@ -67,6 +67,6 @@ for i in range(len(boxes)):                    # 박스를 그리기 위한 반�
     cv2.rectangle(img, (x, y), (x + w, y + h), color, 2)            # 박스 그리기
     cv2.putText(img, label, (x, y + 30), font, 2, (0, 255, 0), 1)   # 클래스 이름 표시
 
-cv2.imshow("Yolo Image", img)                       # 이미지 출력
+cv2.imshow("Yolo Image", img)                  # 이미지 출력
 cv2.waitKey(0)                                 # 키 대기
 cv2.destroyAllWindows()                        # 윈도우 제거

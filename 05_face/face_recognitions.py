@@ -6,7 +6,7 @@ import time
 image_file = 'D:\Github\Vision_WS\OpenCV_Part1\images\marathon_01.jpg'
 encoding_file = 'D:\Github\Vision_WS\OpenCV_Part1/05_face\encodings.pickle'
 unknown_name = 'Unknown'
-model_method = 'cnn'
+model_method = 'cnn'      # 'hog' or 'cnn'
 
 def detectAndDisplay(image):
   start_time = time.time()

@@ -4,3 +4,5 @@ yolo/yolov3-spp.weights
 yolo/yolov3.cfg
 yolo/yolov3.weights
 videos/output_hog.avi
+*.jpg
+model/shape_predictor_68_face_landmarks_GTX.dat

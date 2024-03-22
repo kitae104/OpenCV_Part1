@@ -12,8 +12,8 @@ LEFT_EYE = list(range(42, 48))      # 왼쪽 눈
 EYES = list(range(36, 48))          # 양쪽 눈 
 
 # 파일 경로
-dataset_paths = ['D:/Github/Vision_WS/OpenCV_Part1/images/son-front/', 'D:/Github/Vision_WS/OpenCV_Part1/images/tedy-front/', 'D:/Github/Vision_WS/OpenCV_Part1/images/unknown-front/']
-output_paths = ['D:/Github/Vision_WS/OpenCV_Part1/images/son-align/', 'D:/Github/Vision_WS/OpenCV_Part1/images/tedy-align/', 'D:/Github/Vision_WS/OpenCV_Part1/images/unknown-align/']
+dataset_paths = ['D:/Github/Vision_WS/OpenCV_Part1/images/son-front/', 'D:/Github/Vision_WS/OpenCV_Part1/images/tedy-front/']
+output_paths = ['D:/Github/Vision_WS/OpenCV_Part1/images/son-align/', 'D:/Github/Vision_WS/OpenCV_Part1/images/tedy-align/']
 number_images = 28
 image_type = '.jpg'
 

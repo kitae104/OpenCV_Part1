@@ -5,9 +5,9 @@ print("OpenCV version:" + cv2.__version__)
 
 # 파일명일 때 이름 조심해서 사용( \r 같은 문자가 있으면 안됨) 
 model_name = 'D:/Github/Vision_WS/OpenCV_Part1/data/dnn/res10_300x300_ssd_iter_140000.caffemodel'   # 모델 파일
-prototxt_name = 'D:\Github\Vision_WS\OpenCV_Part1\data\dnn\deploy.prototxt.txt'                     # prototxt 파일
+prototxt_name = 'D:/Github/Vision_WS/OpenCV_Part1/data/dnn/deploy.prototxt.txt'                     # prototxt 파일
 min_confidence = 0.15   # 최소 신뢰도(임계값 조정)
-file_name = "D:\Github\Vision_WS\OpenCV_Part1\images\marathon_03.jpg"   # 파일 이름
+file_name = "D:/Github/Vision_WS/OpenCV_Part1/images/marathon_03.jpg"   # 파일 이름
 
 #################################################################################
 def detectAndDisplay(frame):

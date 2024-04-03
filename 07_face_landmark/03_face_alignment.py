@@ -1,7 +1,7 @@
-###########################################
+####################################################
 # 기울어진 얼굴을 정면으로 만들기
 # 눈의 중심을 찾고 회전 행렬을 구한 후 회전시킴
-###########################################
+####################################################
 # 필요한 패키지를 불러옵니다
 import numpy as np
 import dlib
@@ -13,8 +13,8 @@ LEFT_EYE = list(range(42, 48))      # 왼쪽 눈
 EYES = list(range(36, 48))          # 양쪽 눈 
 
 # 파일 경로
-predictor_file = 'D:\Github\Vision_WS\OpenCV_Part1\model\shape_predictor_68_face_landmarks.dat'
-image_file = 'D:\Github\Vision_WS\OpenCV_Part1\images\\face.jpg'
+predictor_file = 'D:/Github/Vision_WS/OpenCV_Part1/model/shape_predictor_68_face_landmarks.dat'
+image_file = 'D:/Github/Vision_WS/OpenCV_Part1/images/face.jpg'
 MARGIN_RATIO = 1.5                  # 얼굴을 찾을 영역 확대 비율
 OUTPUT_SIZE = (300, 300)            # 결과 이미지 크기
 

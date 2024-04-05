@@ -18,9 +18,9 @@ number_images = 28
 image_type = '.jpg'
 
 # predicator 파일 경로
-predictor_file = 'D:/Github/Vision_WS/OpenCV_Part1/model/shape_predictor_68_face_landmarks.dat'
+predictor_file = 'D:/Github/Vision_WS/OpenCV_Part1/model/shape_predictor_68_face_landmarks.dat' # 68개 랜드마크 파일
 MARGIN_RATIO = 1.5                # 얼굴을 찾을 영역 확대 비율
-OUTPUT_SIZE = (96, 96)            # 결과 이미지 크기
+OUTPUT_SIZE = (96, 96)            # 결과 이미지 크기(인코딩할 이미지 크기)
 
 # 얼굴 검출기와 랜드마크 검출기 생성
 detector = dlib.get_frontal_face_detector()         # 얼굴 검출기
@@ -68,8 +68,8 @@ for (i, dataset_path) in enumerate(dataset_paths):
         print(f"Number of faces detected : {len(rects)}")
 
         for (i, rect) in enumerate(rects):            
-            (x, y, w, h) = getFaceDimension(rect)          # 얼굴의 크기를 구함
-            cv2.rectangle(image, (x, y), (x + w, y + h), (0, 255, 0), 2)   # 얼굴에 사각형 표시
+            (x, y, w, h) = getFaceDimension(rect)                           # 얼굴의 크기를 구함
+            cv2.rectangle(image, (x, y), (x + w, y + h), (0, 255, 0), 2)    # 얼굴에 사각형 표시
 
             points = np.matrix([[p.x, p.y] for p in predictor(gray, rect).parts()])  # 랜드마크 점들의 좌표
             show_parts = points[EYES]           # 눈만 표시
@@ -110,7 +110,7 @@ for (i, dataset_path) in enumerate(dataset_paths):
 
             # 결과 이미지 저장
             output_file = output_path + str(idx+1) + image_type
-            cv2.imshow(output_file, output)
+            cv2.imshow(output_file, output)             # 결과 이미지 출력
             cv2.imwrite(output_file, output)            # 결과 이미지 저장
             
 

@@ -7,13 +7,13 @@ from PIL import ImageTk
 from tkinter import filedialog
 import tkinter.scrolledtext as tkst
 
-face_model = 'D:\Github\Vision_WS\OpenCV_Part1/model/dnn/res10_300x300_ssd_iter_140000.caffemodel'                    # 얼굴 검출 모델
-face_prototxt = 'D:\Github\Vision_WS\OpenCV_Part1/model/dnn/deploy.prototxt.txt'                                      # 얼굴 검출 모델(메타 정보)
-age_model = 'D:\Github\Vision_WS\OpenCV_Part1\model\dnn/age_net.caffemodel'             # 나이 검출 모델
-age_prototxt = 'D:\Github\Vision_WS\OpenCV_Part1\model\dnn/deploy_age.prototxt'         # 나이 검출 모델(메타 정보)
-gender_model = 'D:\Github\Vision_WS\OpenCV_Part1\model\dnn/gender_net.caffemodel'       # 성별 검출 모델
-gender_prototxt = 'D:\Github\Vision_WS\OpenCV_Part1\model\dnn/deploy_gender.prototxt'   # 성별 검출 모델(메타 정보)
-image_file = 'D:/Github/Vision_WS/OpenCV_Part1/images/son-align/1.jpg'                  # 이미지 파일
+face_model = 'E:\Github\Vision_WS\OpenCV_Part1/model/dnn/res10_300x300_ssd_iter_140000.caffemodel'                    # 얼굴 검출 모델
+face_prototxt = 'E:\Github\Vision_WS\OpenCV_Part1/model/dnn/deploy.prototxt.txt'                                      # 얼굴 검출 모델(메타 정보)
+age_model = 'E:\Github\Vision_WS\OpenCV_Part1\model\dnn/age_net.caffemodel'             # 나이 검출 모델
+age_prototxt = 'E:\Github\Vision_WS\OpenCV_Part1\model\dnn/deploy_age.prototxt'         # 나이 검출 모델(메타 정보)
+gender_model = 'E:\Github\Vision_WS\OpenCV_Part1\model\dnn/gender_net.caffemodel'       # 성별 검출 모델
+gender_prototxt = 'E:\Github\Vision_WS\OpenCV_Part1\model\dnn/deploy_gender.prototxt'   # 성별 검출 모델(메타 정보)
+image_file = 'E:\Github\Vision_WS\OpenCV_Part1\images\marathon_02.jpg'                  # 이미지 파일
 
 age_list = ['(0-2)', '(4-6)', '(8-12)', '(15-20)', '(25-32)', '(38-43)', '(48-53)', '(60-100)'] # 나이 리스트 
 gender_list = ['Male','Female'] # 성별 리스트

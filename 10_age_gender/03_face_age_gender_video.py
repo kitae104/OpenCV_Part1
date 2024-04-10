@@ -10,7 +10,7 @@ gender_model = 'D:\Github\Vision_WS\OpenCV_Part1\model\dnn/gender_net.caffemodel
 gender_prototxt = 'D:\Github\Vision_WS\OpenCV_Part1\model\dnn/deploy_gender.prototxt'   # 성별 검출 모델(메타 정보)
 
 age_list = ['(0-2)', '(4-6)', '(8-12)', '(15-20)', '(25-32)', '(38-43)', '(48-53)', '(60-100)'] # 나이 리스트 
-gender_list = ['Male','Female'] # 성별 리스트
+gender_list = ['Male','Female']             # 성별 리스트
 
 title_name = 'Age and Gender Recognition'   # 윈도우 타이틀 이름
 min_confidence = 0.5                        # 최소 확률 값  

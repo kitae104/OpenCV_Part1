@@ -25,7 +25,7 @@ tracker = cv2.TrackerKCF_create()           # KCF 객체 생성
 # mosse
 # tracker = cv2.TrackerMOSSE_create()       # MOSSE 객체 생성
 
-face_cascade_name = 'E:\Github\Vision_WS\OpenCV_Part1\data\haarcascades\haarcascade_frontalface_alt.xml'  # 얼굴 검출 모델
+face_cascade_name = 'E:/Github/Vision_WS/OpenCV_Part1/data/haarcascades/haarcascade_frontalface_alt.xml'  # 얼굴 검출 모델
 face_cascade = cv2.CascadeClassifier()      # 얼굴 검출기 생성 
 
 if not face_cascade.load(cv2.samples.findFile(face_cascade_name)):  # 얼굴 검출기 로드 
@@ -35,7 +35,7 @@ if not face_cascade.load(cv2.samples.findFile(face_cascade_name)):  # 얼굴 검
 detected = False                        # 검출 여부
 frame_mode = 'Tracking'                 # 프레임 모드
 elapsed_time = 0                        # 경과 시간
-trackers = cv2.MultiTracker_create()    # 멀티 트래커 생성
+trackers = cv2.legacy.MultiTracker_create()           # 멀티 트래커 생성
 
 vs = cv2.VideoCapture(file_name)        # 비디오 파일 로드
 
